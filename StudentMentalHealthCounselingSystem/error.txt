@@ -1,0 +1,49 @@
+[WARNING] COMPILATION WARNING :
+[INFO] -------------------------------------------------------------
+[WARNING] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/mentalhealth/counseling/entity/User.java:[63,21] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/mentalhealth/counseling/entity/Appointment.java:[46,31] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[INFO] 2 warnings
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR :
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[12,19] 找不到符号
+  符号:   类 UserService
+  位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[14,27] 找不到符号
+  符号:   类 UserService
+  位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[22,32] 找不到符号
+  符号:   类 User
+  位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[34,32] 找不到符号
+  符号:   类 User
+  位置: 类 com.example.mentalhealth.controller.UserController
+[INFO] 4 errors
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.153 s
+[INFO] Finished at: 2025-02-27T13:52:42+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project counseling-system: Compilation failure: Compilation failure:
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[12,19] 找不到符号
+[ERROR]   符号:   类 UserService
+[ERROR]   位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[14,27] 找不到符号
+[ERROR]   符号:   类 UserService
+[ERROR]   位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[22,32] 找不到符号
+[ERROR]   符号:   类 User
+[ERROR]   位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] /D:/programs2024to2025/wanjiajuprogram/fourth/StudentMentalHealthCounselingSystem/backend/src/main/java/com/example/mentalhealth/controller/UserController.java:[34,32] 找不到符号
+[ERROR]   符号:   类 User
+[ERROR]   位置: 类 com.example.mentalhealth.controller.UserController
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,13 @@
+CREATE TABLE appointments (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    student_id BIGINT NOT NULL,
+    counselor_id BIGINT NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    description TEXT,
+    appointment_time DATETIME NOT NULL,
+    status ENUM ('PENDING','CONFIRMED','COMPLETED','CANCELLED') NOT NULL DEFAULT 'PENDING',
+    create_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    update_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (student_id) REFERENCES users(id),
+    FOREIGN KEY (counselor_id) REFERENCES users(id)
+); 
