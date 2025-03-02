@@ -1,4 +1,4 @@
-# 学生心理健康咨询系统
+﻿# 学生心理健康咨询系统
 
 ## 项目概述
 
@@ -6,39 +6,139 @@
 
 系统支持三种角色（学生、心理咨询师、系统管理员）的不同功能需求，提供直观友好的用户界面，完善的权限管理以及数据安全保障。
 
-## 项目详细介绍
+## 详细介绍
 
-本系统是一个全面的心理健康服务平台，致力于解决高校学生心理健康问题，提供从心理测评到心理咨询的完整服务链条。系统主要解决以下问题：
+### 系统背景与意义
 
-1. **心理问题早期识别**：通过专业心理测评量表，帮助学生及早发现潜在的心理问题，如抑郁、焦虑、学习压力等。
-2. **心理咨询便捷化**：打破传统心理咨询的时间和空间限制，学生可随时在线预约心理咨询师。
-3. **心理健康数据分析**：为学校提供学生心理健康状况的整体分析，帮助制定有针对性的心理健康工作策略。
-4. **信息保密与安全**：采用严格的权限控制和数据加密措施，保障学生心理健康数据的安全和隐私。
+随着高校学生心理健康问题日益受到重视，传统的心理咨询模式已难以满足当代大学生的需求。本系统旨在通过信息化手段，构建一个便捷、高效、保密的心理健康服务平台，帮助学生及时发现和解决心理问题，同时为学校提供科学的心理健康管理工具。
 
-### 用户场景与流程
+### 系统特色
 
-#### 学生使用流程
+1. **多角色协同**：学生、咨询师和管理员三种角色各司其职，形成完整的心理健康服务闭环
+2. **科学测评体系**：提供多种专业心理测评量表，帮助学生了解自身心理状况
+3. **便捷预约流程**：学生可随时在线预约心理咨询，减少时间和空间限制
+4. **数据安全保障**：严格的权限控制和数据加密，保护用户隐私
+5. **个性化服务**：根据学生测评结果和咨询记录，提供针对性的心理健康建议
 
-1. **注册登录**：学生使用学号和初始密码登录系统，首次登录需完善个人信息。
-2. **参与心理测评**：浏览可用的心理测评问卷，选择问卷进行测评，填写答案后获取即时评估结果和建议。
-3. **查看历史评估**：访问"我的测评"页面，查看历史测评记录和结果分析，了解自己的心理健康变化趋势。
-4. **预约咨询**：在"咨询预约"页面，查看心理咨询师空闲时段，选择合适的咨询师和时间预约咨询。
-5. **管理预约**：在"我的预约"页面，查看、修改或取消自己的预约记录，查看咨询反馈。
-6. **个人信息管理**：在"个人中心"修改个人资料、联系方式和密码。
+### 用户操作指南
 
-#### 心理咨询师使用流程
+#### 学生用户
 
-1. **管理预约请求**：查看学生发起的咨询预约请求，确认或调整预约时间。
-2. **查看学生评估**：在"学生管理"页面，查看预约学生的基本信息和心理测评历史，做好咨询前的准备工作。
-3. **进行咨询记录**：咨询完成后，记录咨询内容和建议，给出针对性的心理健康指导。
-4. **咨询统计分析**：查看自己的咨询工作量、学生类型分布等统计数据，优化咨询工作。
+1. **账号注册与登录**
+   - 使用学号、姓名、邮箱等信息注册账号
+   - 通过用户名和密码登录系统
+   - 修改个人资料和密码
 
-#### 系统管理员使用流程
+2. **心理测评**
+   - 浏览可用的心理测评问卷列表
+   - 选择并参与心理测评
+   - 提交测评答案并获取即时评估结果
+   - 查看测评结果的详细解读和建议
+   - 查看历史测评记录和结果变化趋势
 
-1. **用户管理**：添加、修改或停用系统用户账号，包括学生、咨询师和其他管理员。
-2. **问卷管理**：创建新的心理测评问卷，设置问题和选项，发布或归档问卷。
-3. **系统监控**：查看系统使用情况，如活跃用户数、测评次数、预约量等关键指标。
-4. **数据分析与报表**：生成学生心理健康统计报表，为学校心理健康工作提供数据支持。
+3. **咨询预约**
+   - 浏览心理咨询师列表及其专长领域
+   - 选择合适的咨询师进行预约
+   - 选择预约时间段和咨询方式（线上/线下）
+   - 填写预约原因和简要描述
+   - 查看预约状态（待确认、已确认、已完成、已取消）
+   - 取消未进行的预约
+   - 对已完成的咨询进行评价
+
+4. **个人中心**
+   - 查看个人基本信息
+   - 修改联系方式和密码
+   - 查看测评历史和预约记录
+   - 接收系统通知和提醒
+
+#### 心理咨询师用户
+
+1. **账号管理**
+   - 登录系统
+   - 完善个人资料和专业信息
+   - 设置可预约时间段
+
+2. **预约管理**
+   - 查看学生预约请求
+   - 确认或拒绝预约请求
+   - 查看预约日程安排
+   - 记录咨询完成情况
+   - 查看历史咨询记录
+
+3. **学生评估查看**
+   - 查看已预约学生的基本信息
+   - 查看学生的心理测评历史和结果
+   - 根据测评结果制定咨询方案
+   - 记录咨询笔记和建议
+
+4. **统计分析**
+   - 查看个人咨询工作量统计
+   - 分析常见心理问题类型
+   - 评估咨询效果
+
+#### 系统管理员用户
+
+1. **用户管理**
+   - 创建、修改、删除用户账号
+   - 设置用户角色和权限
+   - 重置用户密码
+   - 启用/禁用用户账号
+   - 查看用户登录日志
+
+2. **问卷管理**
+   - 创建新的心理测评问卷
+   - 编辑问卷题目和选项
+   - 设置评分规则和结果解释
+   - 发布或归档问卷
+   - 调整问卷显示顺序
+
+3. **数据统计与分析**
+   - 查看系统使用情况统计
+   - 分析测评参与情况和结果分布
+   - 生成咨询预约统计报表
+   - 监控系统性能和访问日志
+
+4. **系统配置**
+   - 管理系统基本参数
+   - 配置邮件通知模板
+   - 备份和恢复数据
+   - 查看系统日志
+
+### 系统工作流程
+
+1. **心理测评流程**
+   - 学生登录系统 → 浏览测评列表 → 选择测评问卷 → 填写答案 → 提交测评 → 获取结果与建议 → 查看历史记录
+
+2. **咨询预约流程**
+   - 学生登录系统 → 浏览咨询师列表 → 选择咨询师 → 提交预约申请 → 等待确认 → 收到预约确认通知 → 按时参加咨询 → 咨询完成后评价
+
+3. **用户管理流程**
+   - 管理员登录系统 → 进入用户管理界面 → 创建/修改用户账号 → 设置角色和权限 → 保存更改
+
+4. **问卷管理流程**
+   - 管理员登录系统 → 进入问卷管理界面 → 创建新问卷 → 添加题目和选项 → 设置评分规则 → 预览问卷 → 发布问卷
+
+### 系统价值与应用场景
+
+1. **日常心理健康监测**
+   - 学生可定期参与心理测评，了解自身心理状况变化
+   - 学校可掌握学生群体心理健康整体趋势
+
+2. **心理危机干预**
+   - 通过测评发现有心理危机风险的学生
+   - 咨询师可及时介入，提供专业帮助
+
+3. **学业压力疏导**
+   - 针对学业压力大的学生提供专门的心理支持
+   - 帮助学生调整学习状态和心态
+
+4. **人际关系辅导**
+   - 解决学生在人际交往中遇到的困难
+   - 提升学生的社交能力和人际关系处理能力
+
+5. **职业规划指导**
+   - 结合心理特质，为学生提供职业规划建议
+   - 帮助学生认识自我，明确职业发展方向
 
 ## 功能介绍
 
@@ -68,7 +168,7 @@
 ### 前端技术
 
 - **框架**：Vue 3 + TypeScript
-- **UI组件库**：Ant Design Vue
+- **UI组件库**：Ant Design Vue, Element Plus
 - **状态管理**：Pinia
 - **路由**：Vue Router
 - **HTTP客户端**：Axios
@@ -82,7 +182,6 @@
 - **数据库**：MySQL 8
 - **数据库迁移**：Flyway
 - **ORM框架**：Spring Data JPA
-- **API文档**：Springdoc-OpenAPI (Swagger)
 
 ### 系统环境
 
@@ -112,107 +211,69 @@
 
 ```
 frontend/
-├── public/            # 静态资源
+├── public/
 ├── src/
-│   ├── api/           # API请求模块
-│   │   ├── appointment.ts    # 预约相关API
-│   │   ├── assessment.ts     # 心理测评相关API
-│   │   ├── auth.ts           # 认证相关API
-│   │   ├── counselor.ts      # 咨询师相关API
-│   │   ├── questionnaire.ts  # 问卷相关API
-│   │   ├── student.ts        # 学生相关API
-│   │   ├── user.ts           # 用户相关API
-│   │   └── index.ts          # API统一导出
-│   ├── assets/        # 资源文件(图片、样式等)
-│   │   ├── images/          # 图片资源
-│   │   ├── styles/          # 全局样式
-│   │   └── icons/           # 图标资源
-│   ├── components/    # 通用组件
-│   │   ├── common/          # 通用组件
-│   │   │   ├── AppHeader.vue         # 应用头部组件
-│   │   │   ├── AppFooter.vue         # 应用底部组件
-│   │   │   ├── AppSidebar.vue        # 侧边栏组件
-│   │   │   ├── LoadingSpinner.vue    # 加载指示器
-│   │   │   ├── Notification.vue      # 通知组件
-│   │   │   └── ErrorMessage.vue      # 错误消息组件
-│   │   ├── assessment/      # 测评相关组件
-│   │   │   ├── QuestionnaireCard.vue # 问卷卡片
-│   │   │   ├── QuestionItem.vue      # 问题项组件
-│   │   │   ├── AnswerOption.vue      # 答案选项组件
-│   │   │   ├── ResultChart.vue       # 结果图表组件
-│   │   │   └── AssessmentHistory.vue # 测评历史组件
-│   │   ├── appointment/     # 预约相关组件
-│   │   │   ├── AppointmentForm.vue   # 预约表单
-│   │   │   ├── AppointmentList.vue   # 预约列表
-│   │   │   ├── CounselorSelector.vue # 咨询师选择器
-│   │   │   └── TimeSlotPicker.vue    # 时间段选择器
-│   │   └── admin/           # 管理相关组件
-│   │       ├── UserManagement.vue    # 用户管理组件
-│   │       ├── QuestionnaireEditor.vue # 问卷编辑器
-│   │       └── SystemStats.vue       # 系统统计组件
-│   ├── router/        # 路由配置
-│   │   ├── index.ts          # 路由主文件
-│   │   ├── adminRoutes.ts    # 管理员路由
-│   │   ├── counselorRoutes.ts # 咨询师路由
-│   │   ├── studentRoutes.ts  # 学生路由
-│   │   └── publicRoutes.ts   # 公共路由
-│   ├── stores/        # Pinia状态管理
-│   │   ├── auth.ts           # 认证状态
-│   │   ├── user.ts           # 用户状态
-│   │   ├── assessment.ts     # 测评状态
-│   │   ├── appointment.ts    # 预约状态
-│   │   └── notification.ts   # 通知状态
-│   ├── types/         # TypeScript类型定义
-│   │   ├── user.ts           # 用户相关类型
-│   │   ├── assessment.ts     # 测评相关类型
-│   │   ├── appointment.ts    # 预约相关类型
-│   │   └── common.ts         # 通用类型
-│   ├── utils/         # 工具函数
-│   │   ├── request.ts        # HTTP请求工具
-│   │   ├── auth.ts           # 认证工具
-│   │   ├── date.ts           # 日期处理工具
-│   │   ├── validation.ts     # 表单验证工具
-│   │   └── formatter.ts      # 数据格式化工具
-│   ├── views/         # 页面视图组件
-│   │   ├── admin/     # 管理员页面
-│   │   │   ├── Dashboard.vue         # 管理员仪表盘
-│   │   │   ├── UserManagement.vue    # 用户管理页面
-│   │   │   ├── QuestionnaireManagement.vue # 问卷管理页面
-│   │   │   ├── QuestionnaireEditor.vue # 问卷编辑页面
-│   │   │   ├── QuestionnaireStats.vue # 问卷统计页面
-│   │   │   ├── SystemMonitor.vue     # 系统监控页面
-│   │   │   └── AdminProfile.vue      # 管理员个人资料页面
-│   │   ├── counselor/ # 咨询师页面
-│   │   │   ├── Dashboard.vue         # 咨询师仪表盘
-│   │   │   ├── AppointmentManagement.vue # 预约管理页面
-│   │   │   ├── AppointmentDetail.vue # 预约详情页面
-│   │   │   ├── StudentAssessment.vue # 学生评估查看页面
-│   │   │   ├── CounselingRecord.vue  # 咨询记录页面
-│   │   │   └── CounselorProfile.vue  # 咨询师个人资料页面
-│   │   ├── student/   # 学生页面
-│   │   │   ├── Dashboard.vue         # 学生仪表盘
-│   │   │   ├── QuestionnaireList.vue # 问卷列表页面
-│   │   │   ├── TakeAssessment.vue    # 参与测评页面
-│   │   │   ├── AssessmentResult.vue  # 测评结果页面
-│   │   │   ├── AssessmentHistory.vue # 测评历史页面
-│   │   │   ├── AppointmentBooking.vue # 预约咨询页面
-│   │   │   ├── MyAppointments.vue    # 我的预约页面
-│   │   │   └── StudentProfile.vue    # 学生个人资料页面
-│   │   └── common/    # 公共页面
-│   │       ├── Login.vue             # 登录页面
-│   │       ├── Register.vue          # 注册页面
-│   │       ├── ForgotPassword.vue    # 忘记密码页面
-│   │       ├── ResetPassword.vue     # 重置密码页面
-│   │       ├── NotFound.vue          # 404页面
-│   │       ├── Unauthorized.vue      # 未授权页面
-│   │       └── MainLayout.vue        # 主布局页面
-│   ├── App.vue        # 根组件
-│   └── main.ts        # 入口文件
-├── .env               # 环境变量
-├── index.html         # HTML模板
-├── package.json       # 依赖管理
-├── tsconfig.json      # TypeScript配置
-└── vite.config.ts     # Vite配置
+│   ├── api/
+│   │   ├── admin.ts             # 管理员相关API
+│   │   ├── appointment.ts       # 预约相关API
+│   │   ├── assessment.ts        # 测评相关API
+│   │   ├── auth.ts              # 认证相关API
+│   │   ├── axios.ts             # Axios实例配置
+│   │   ├── questionnaire.ts     # 问卷相关API
+│   │   └── user.ts              # 用户相关API
+│   ├── assets/
+│   │   └── vue.svg              # 资源文件
+│   ├── components/
+│   │   ├── HelloWorld.vue       # 示例组件
+│   │   └── QuestionnaireForm.vue # 问卷表单组件
+│   ├── layouts/
+│   │   └── AdminLayout.vue      # 管理员布局组件
+│   ├── router/
+│   │   └── index.ts             # 路由配置
+│   ├── stores/
+│   │   └── auth.ts              # 认证状态管理
+│   ├── types/
+│   │   ├── appointment.ts       # 预约相关类型
+│   │   ├── assessment.ts        # 测评相关类型
+│   │   ├── questionnaire.ts     # 问卷相关类型
+│   │   └── user.ts              # 用户相关类型
+│   ├── utils/
+│   │   └── request.ts           # 请求工具
+│   ├── views/
+│   │   ├── admin/
+│   │   │   ├── AdminDashboard.vue       # 管理员仪表板
+│   │   │   ├── Dashboard.vue            # 仪表板
+│   │   │   ├── QuestionnaireManagement.vue # 问卷管理
+│   │   │   └── UserManagement.vue       # 用户管理
+│   │   ├── components/
+│   │   │   └── UserProfile.vue          # 用户资料
+│   │   ├── counselor/
+│   │   │   ├── AppointmentManagement.vue # 预约管理
+│   │   │   ├── CounselorDashboard.vue   # 咨询师仪表板
+│   │   │   └── StudentAssessmentView.vue # 学生测评查看
+│   │   ├── student/
+│   │   │   ├── AppointmentList.vue      # 预约列表
+│   │   │   ├── AssessmentHistory.vue    # 测评历史
+│   │   │   ├── AssessmentList.vue       # 测评列表
+│   │   │   ├── AssessmentResult.vue     # 测评结果
+│   │   │   ├── CounselorList.vue        # 咨询师列表
+│   │   │   ├── StudentDashboard.vue     # 学生仪表板
+│   │   │   └── TakeAssessment.vue       # 参与测评
+│   │   ├── Login.vue                    # 登录页面
+│   │   └── Register.vue                 # 注册页面
+│   ├── App.vue                          # 应用程序根组件
+│   ├── env.d.ts                         # 环境变量类型定义
+│   ├── main.ts                          # 应用程序入口文件
+│   └── style.css                        # 全局样式
+├── .env                                 # 环境变量
+├── .gitignore                           # Git忽略文件
+├── index.html                           # HTML模板
+├── package-lock.json                    # 依赖锁定文件
+├── package.json                         # 依赖管理
+├── README.md                            # 项目说明
+├── tsconfig.json                        # TypeScript配置
+├── tsconfig.node.json                   # Node TypeScript配置
+└── vite.config.ts                       # Vite配置
 ```
 
 ### 后端结构
@@ -222,105 +283,80 @@ backend/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/mentalhealth/counseling/
-│   │   │   ├── config/          # 配置类
-│   │   │   │   ├── SecurityConfig.java    # 安全配置
-│   │   │   │   ├── JwtConfig.java         # JWT配置
-│   │   │   │   ├── WebConfig.java         # Web配置
-│   │   │   │   ├── SwaggerConfig.java     # Swagger配置
-│   │   │   │   └── AuditConfig.java       # 审计配置
-│   │   │   ├── controller/      # 控制器
-│   │   │   │   ├── AuthController.java    # 认证控制器
-│   │   │   │   ├── UserController.java    # 用户控制器
-│   │   │   │   ├── StudentController.java # 学生控制器
-│   │   │   │   ├── CounselorController.java # 咨询师控制器
-│   │   │   │   ├── AdminController.java   # 管理员控制器
-│   │   │   │   ├── QuestionnaireController.java # 问卷控制器
-│   │   │   │   ├── AssessmentController.java # 测评控制器
-│   │   │   │   └── AppointmentController.java # 预约控制器
-│   │   │   ├── dto/             # 数据传输对象
-│   │   │   │   ├── request/              # 请求DTO
-│   │   │   │   │   ├── LoginRequest.java    # 登录请求
-│   │   │   │   │   ├── RegisterRequest.java # 注册请求
-│   │   │   │   │   ├── UserUpdateRequest.java # 用户更新请求
-│   │   │   │   │   ├── QuestionnaireRequest.java # 问卷请求
-│   │   │   │   │   └── AppointmentRequest.java # 预约请求
-│   │   │   │   └── response/             # 响应DTO
-│   │   │   │       ├── JwtResponse.java     # JWT响应
-│   │   │   │       ├── UserResponse.java    # 用户响应
-│   │   │   │       ├── QuestionnaireResponse.java # 问卷响应
-│   │   │   │       ├── AssessmentResponse.java # 测评响应
-│   │   │   │       └── AppointmentResponse.java # 预约响应
-│   │   │   ├── entity/          # 实体类
-│   │   │   │   ├── User.java              # 用户实体
-│   │   │   │   ├── Role.java              # 角色实体
-│   │   │   │   ├── Student.java           # 学生实体
-│   │   │   │   ├── Counselor.java         # 咨询师实体
-│   │   │   │   ├── Questionnaire.java     # 问卷实体
-│   │   │   │   ├── Question.java          # 问题实体
-│   │   │   │   ├── Option.java            # 选项实体
-│   │   │   │   ├── AssessmentRecord.java  # 测评记录实体
-│   │   │   │   ├── AnswerRecord.java      # 答题记录实体
-│   │   │   │   └── Appointment.java       # 预约实体
-│   │   │   ├── exception/       # 异常处理
-│   │   │   │   ├── GlobalExceptionHandler.java # 全局异常处理器
-│   │   │   │   ├── ResourceNotFoundException.java # 资源未找到异常
-│   │   │   │   ├── BadRequestException.java # 错误请求异常
-│   │   │   │   └── UnauthorizedException.java # 未授权异常
-│   │   │   ├── repository/      # 数据访问层
-│   │   │   │   ├── UserRepository.java    # 用户仓库
-│   │   │   │   ├── RoleRepository.java    # 角色仓库
-│   │   │   │   ├── StudentRepository.java # 学生仓库
-│   │   │   │   ├── CounselorRepository.java # 咨询师仓库
-│   │   │   │   ├── QuestionnaireRepository.java # 问卷仓库
-│   │   │   │   ├── QuestionRepository.java # 问题仓库
-│   │   │   │   ├── OptionRepository.java  # 选项仓库
-│   │   │   │   ├── AssessmentRecordRepository.java # 测评记录仓库
-│   │   │   │   ├── AnswerRecordRepository.java # 答题记录仓库
-│   │   │   │   └── AppointmentRepository.java # 预约仓库
-│   │   │   ├── security/        # 安全相关
-│   │   │   │   ├── JwtTokenProvider.java  # JWT令牌提供者
-│   │   │   │   ├── JwtAuthenticationFilter.java # JWT认证过滤器
-│   │   │   │   ├── UserDetailsServiceImpl.java # 用户详情服务实现
-│   │   │   │   └── CustomUserDetails.java # 自定义用户详情
-│   │   │   ├── service/         # 服务层
-│   │   │   │   ├── AuthService.java       # 认证服务接口
-│   │   │   │   ├── UserService.java       # 用户服务接口
-│   │   │   │   ├── StudentService.java    # 学生服务接口
-│   │   │   │   ├── CounselorService.java  # 咨询师服务接口
-│   │   │   │   ├── QuestionnaireService.java # 问卷服务接口
-│   │   │   │   ├── AssessmentService.java # 测评服务接口
-│   │   │   │   ├── AppointmentService.java # 预约服务接口
-│   │   │   │   └── impl/        # 服务实现
-│   │   │   │       ├── AuthServiceImpl.java # 认证服务实现
-│   │   │   │       ├── UserServiceImpl.java # 用户服务实现
-│   │   │   │       ├── StudentServiceImpl.java # 学生服务实现
-│   │   │   │       ├── CounselorServiceImpl.java # 咨询师服务实现
-│   │   │   │       ├── QuestionnaireServiceImpl.java # 问卷服务实现
-│   │   │   │       ├── AssessmentServiceImpl.java # 测评服务实现
-│   │   │   │       └── AppointmentServiceImpl.java # 预约服务实现
-│   │   │   └── CounselingSystemApplication.java # 应用入口
+│   │   │   ├── config/
+│   │   │   │   ├── ApplicationConfig.java     # 应用程序配置
+│   │   │   │   └── SecurityConfig.java        # 安全配置
+│   │   │   ├── controller/
+│   │   │   │   ├── AdminController.java       # 管理员控制器
+│   │   │   │   ├── AppointmentController.java # 预约控制器
+│   │   │   │   ├── AssessmentQuestionnaireController.java # 测评问卷控制器
+│   │   │   │   ├── AssessmentRecordController.java # 测评记录控制器
+│   │   │   │   ├── AuthController.java        # 认证控制器
+│   │   │   │   ├── CounselorController.java   # 咨询师控制器
+│   │   │   │   └── UserController.java        # 用户控制器
+│   │   │   ├── dto/
+│   │   │   │   ├── assessment/
+│   │   │   │   │   ├── AssessmentResultResponse.java # 测评结果响应
+│   │   │   │   │   ├── AssessmentSubmitRequest.java  # 测评提交请求
+│   │   │   │   │   ├── QuestionnaireRequest.java     # 问卷请求
+│   │   │   │   │   ├── QuestionnaireResponse.java    # 问卷响应
+│   │   │   │   │   └── QuestionnaireStatistics.java  # 问卷统计
+│   │   │   │   ├── AppointmentResponse.java          # 预约响应
+│   │   │   │   ├── AuthenticationRequest.java        # 认证请求
+│   │   │   │   ├── AuthenticationResponse.java       # 认证响应
+│   │   │   │   ├── ChangePasswordRequest.java        # 修改密码请求
+│   │   │   │   ├── CreateAppointmentRequest.java     # 创建预约请求
+│   │   │   │   ├── RegisterRequest.java              # 注册请求
+│   │   │   │   ├── UserProfileRequest.java           # 用户资料请求
+│   │   │   │   └── UserProfileResponse.java          # 用户资料响应
+│   │   │   ├── entity/
+│   │   │   │   ├── AnswerRecord.java                 # 答案记录实体
+│   │   │   │   ├── Appointment.java                  # 预约实体
+│   │   │   │   ├── AssessmentQuestion.java           # 测评问题实体
+│   │   │   │   ├── AssessmentQuestionnaire.java      # 测评问卷实体
+│   │   │   │   ├── AssessmentRecord.java             # 测评记录实体
+│   │   │   │   ├── QuestionOption.java               # 问题选项实体
+│   │   │   │   ├── User.java                         # 用户实体
+│   │   │   │   └── UserRole.java                     # 用户角色枚举
+│   │   │   ├── exception/
+│   │   │   │   ├── ErrorResponse.java                # 错误响应
+│   │   │   │   ├── GlobalExceptionHandler.java       # 全局异常处理
+│   │   │   │   └── ResourceNotFoundException.java    # 资源未找到异常
+│   │   │   ├── repository/
+│   │   │   │   ├── AnswerRecordRepository.java       # 答案记录仓库
+│   │   │   │   ├── AppointmentRepository.java        # 预约仓库
+│   │   │   │   ├── AssessmentQuestionnaireRepository.java # 测评问卷仓库
+│   │   │   │   ├── AssessmentQuestionRepository.java # 测评问题仓库
+│   │   │   │   ├── AssessmentRecordRepository.java   # 测评记录仓库
+│   │   │   │   ├── QuestionOptionRepository.java     # 问题选项仓库
+│   │   │   │   └── UserRepository.java               # 用户仓库
+│   │   │   ├── security/
+│   │   │   │   ├── JwtAuthenticationFilter.java      # JWT认证过滤器
+│   │   │   │   └── JwtService.java                   # JWT服务
+│   │   │   ├── service/
+│   │   │   │   ├── impl/
+│   │   │   │   │   ├── AdminServiceImpl.java         # 管理员服务实现
+│   │   │   │   │   ├── AppointmentServiceImpl.java   # 预约服务实现
+│   │   │   │   │   ├── AssessmentQuestionnaireServiceImpl.java # 测评问卷服务实现
+│   │   │   │   │   ├── AssessmentRecordServiceImpl.java # 测评记录服务实现
+│   │   │   │   │   └── UserServiceImpl.java          # 用户服务实现
+│   │   │   │   ├── AdminService.java                 # 管理员服务接口
+│   │   │   │   ├── AppointmentService.java           # 预约服务接口
+│   │   │   │   ├── AssessmentQuestionnaireService.java # 测评问卷服务接口
+│   │   │   │   ├── AssessmentRecordService.java      # 测评记录服务接口
+│   │   │   │   ├── AuthenticationService.java        # 认证服务接口
+│   │   │   │   └── UserService.java                  # 用户服务接口
+│   │   │   └── CounselingSystemApplication.java      # 应用程序入口
 │   │   └── resources/
-│   │       ├── application.yml  # 应用配置
-│   │       ├── application-dev.yml # 开发环境配置
-│   │       ├── application-prod.yml # 生产环境配置
-│   │       └── db/migration/    # Flyway数据库迁移脚本
-│   │           ├── V1__create_users_table.sql # 创建用户表
-│   │           ├── V2__create_roles_table.sql # 创建角色表
-│   │           ├── V3__create_questionnaires_table.sql # 创建问卷表
-│   │           ├── V4__create_questions_table.sql # 创建问题表
-│   │           ├── V5__create_options_table.sql # 创建选项表
-│   │           ├── V6__create_assessment_records_table.sql # 创建测评记录表
-│   │           ├── V7__create_answer_records_table.sql # 创建答题记录表
-│   │           └── V8__create_appointments_table.sql # 创建预约表
-│   └── test/                    # 测试代码
-│       ├── java/com/mentalhealth/counseling/
-│       │   ├── controller/      # 控制器测试
-│       │   ├── service/         # 服务测试
-│       │   ├── repository/      # 仓库测试
-│       │   └── security/        # 安全测试
-│       └── resources/           # 测试资源
-├── pom.xml                      # Maven配置
-└── README.md                    # 项目说明
+│   │       ├── db/migration/
+│   │       │   ├── V1__Create_Users_Table.sql        # 创建用户表
+│   │       │   ├── V2__Add_User_Enabled_Field.sql    # 添加用户启用字段
+│   │       │   ├── V3__Create_Assessment_Tables.sql  # 创建测评表
+│   │       │   ├── V4__Add_Super_Admin.sql           # 添加超级管理员
+│   │       │   └── V5__Create_Appointments_Table.sql # 创建预约表
+│   │       └── application.yml                       # 应用配置
+│   └── test/                                         # 测试代码
+└── pom.xml                                           # Maven配置
 ```
 
 ## 模块说明
@@ -355,375 +391,303 @@ backend/
 - 个人信息维护
 - 密码修改
 
-## 核心功能流程
-
-### 心理测评流程
-
-1. 系统管理员创建并发布心理测评问卷
-2. 学生登录系统，查看可用的测评问卷
-3. 学生选择问卷，进入测评页面
-4. 学生回答问卷中的问题，提交答案
-5. 系统根据答案计算测评结果并展示
-6. 学生可以查看历史测评记录和结果
-
-### 咨询预约流程
-
-1. 学生在系统中查看可预约的心理咨询师
-2. 学生选择咨询师和可用时间段，提交预约申请
-3. 心理咨询师接收到预约通知，确认或拒绝预约
-4. 预约确认后，双方按约定时间进行咨询
-5. 咨询完成后，咨询师记录咨询内容和建议
-6. 学生可以查看历史咨询记录和咨询反馈
-
 ## 数据库设计
 
 系统使用MySQL 8作为数据库，主要包含以下核心表：
 
-### 用户表 (users)
+- `users`: 用户信息表
+- `assessment_questionnaires`: 心理测评问卷表
+- `assessment_questions`: 问卷题目表
+- `question_options`: 题目选项表
+- `assessment_records`: 测评记录表
+- `answer_records`: 答题记录表
+- `appointments`: 咨询预约表
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| username | VARCHAR(50) | 用户名，唯一 |
-| password | VARCHAR(100) | 密码（加密存储） |
-| email | VARCHAR(100) | 邮箱 |
-| phone | VARCHAR(20) | 手机号 |
-| real_name | VARCHAR(50) | 真实姓名 |
-| role | VARCHAR(20) | 角色（STUDENT/COUNSELOR/ADMIN） |
-| created_at | DATETIME | 创建时间 |
-| updated_at | DATETIME | 更新时间 |
-| status | TINYINT | 状态（1-启用/0-禁用） |
-| last_login_time | DATETIME | 最后登录时间 |
+### 数据库表结构详解
 
-### 角色表 (roles)
+#### 1. users（用户表）
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| name | VARCHAR(50) | 角色名称，唯一 |
-| description | VARCHAR(200) | 角色描述 |
+存储系统中所有用户的基本信息，包括学生、心理咨询师和管理员。
 
-### 学生信息表 (students)
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 用户ID | 主键，自增 |
+| username | VARCHAR(50) | 用户名 | 非空，唯一 |
+| password | VARCHAR(255) | 密码（加密存储） | 非空 |
+| real_name | VARCHAR(50) | 真实姓名 | 非空 |
+| phone | VARCHAR(20) | 手机号 | 非空，唯一 |
+| email | VARCHAR(100) | 电子邮箱 | 唯一 |
+| role | ENUM | 用户角色（STUDENT/ADMIN/COUNSELOR） | 非空 |
+| university | VARCHAR(100) | 所属大学 | 可空 |
+| college | VARCHAR(100) | 所属学院 | 可空 |
+| major | VARCHAR(100) | 专业 | 可空 |
+| student_id | VARCHAR(50) | 学号（学生用户） | 可空 |
+| enabled | BOOLEAN | 账号是否启用 | 默认true |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| user_id | BIGINT | 关联用户ID，外键 |
-| student_id | VARCHAR(20) | 学号 |
-| college | VARCHAR(100) | 学院 |
-| major | VARCHAR(100) | 专业 |
-| grade | VARCHAR(20) | 年级 |
-| class_name | VARCHAR(50) | 班级 |
-| gender | VARCHAR(10) | 性别 |
-| birth_date | DATE | 出生日期 |
-| address | VARCHAR(200) | 地址 |
-| emergency_contact | VARCHAR(50) | 紧急联系人 |
-| emergency_phone | VARCHAR(20) | 紧急联系电话 |
+#### 2. assessment_questionnaire（心理测评问卷表）
 
-### 咨询师信息表 (counselors)
+存储系统中的心理测评问卷信息。
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| user_id | BIGINT | 关联用户ID，外键 |
-| title | VARCHAR(50) | 职称 |
-| expertise | VARCHAR(200) | 专业领域 |
-| introduction | TEXT | 个人简介 |
-| qualification | VARCHAR(100) | 资质证书 |
-| work_years | INT | 工作年限 |
-| available_time | TEXT | 可预约时间（JSON格式） |
-| max_appointments_per_day | INT | 每日最大预约数 |
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 问卷ID | 主键，自增 |
+| title | VARCHAR(100) | 问卷标题 | 非空 |
+| description | TEXT | 问卷描述 | 可空 |
+| total_score | INT | 问卷总分 | 可空 |
+| passing_score | INT | 及格分数线 | 可空 |
+| status | ENUM | 问卷状态（DRAFT/PUBLISHED/ARCHIVED） | 非空，默认DRAFT |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
-### 心理测评问卷表 (assessment_questionnaires)
+#### 3. assessment_question（测评问题表）
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| title | VARCHAR(100) | 问卷标题 |
-| description | TEXT | 问卷描述 |
-| instructions | TEXT | 填写说明 |
-| category | VARCHAR(50) | 问卷类别 |
-| total_score | INT | 总分值 |
-| created_by | BIGINT | 创建者ID |
-| created_at | DATETIME | 创建时间 |
-| updated_at | DATETIME | 更新时间 |
-| status | VARCHAR(20) | 状态（DRAFT/PUBLISHED/ARCHIVED） |
-| time_limit_minutes | INT | 答题时限（分钟） |
+存储问卷中的具体问题。
 
-### 问卷题目表 (assessment_questions)
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 问题ID | 主键，自增 |
+| questionnaire_id | BIGINT | 所属问卷ID | 外键，非空 |
+| question_text | TEXT | 问题内容 | 非空 |
+| question_type | ENUM | 问题类型（SINGLE_CHOICE/MULTIPLE_CHOICE） | 非空，默认SINGLE_CHOICE |
+| score | INT | 问题分值 | 非空，默认0 |
+| sort_order | INT | 排序顺序 | 非空，默认0 |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| questionnaire_id | BIGINT | 所属问卷ID，外键 |
-| question_text | TEXT | 问题文本 |
-| question_type | VARCHAR(20) | 问题类型（SINGLE_CHOICE/MULTIPLE_CHOICE/SCALE/TEXT） |
-| required | BOOLEAN | 是否必答 |
-| order_num | INT | 顺序号 |
-| score_weight | FLOAT | 分数权重 |
+#### 4. question_option（问题选项表）
 
-### 题目选项表 (question_options)
+存储问题的选项信息。
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| question_id | BIGINT | 所属问题ID，外键 |
-| option_text | VARCHAR(200) | 选项文本 |
-| option_value | INT | 选项分值 |
-| order_num | INT | 顺序号 |
-| is_correct_answer | BOOLEAN | 是否为正确答案（适用于有标准答案的题目） |
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 选项ID | 主键，自增 |
+| question_id | BIGINT | 所属问题ID | 外键，非空 |
+| option_text | VARCHAR(255) | 选项内容 | 非空 |
+| score | INT | 选项分值 | 非空，默认0 |
+| sort_order | INT | 排序顺序 | 非空，默认0 |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
-### 测评记录表 (assessment_records)
+#### 5. assessment_record（测评记录表）
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| student_id | BIGINT | 学生ID，外键 |
-| questionnaire_id | BIGINT | 问卷ID，外键 |
-| start_time | DATETIME | 开始时间 |
-| end_time | DATETIME | 结束时间 |
-| total_score | FLOAT | 总得分 |
-| result_level | VARCHAR(20) | 结果等级（如：正常/轻度/中度/重度） |
-| result_description | TEXT | 结果描述 |
-| status | VARCHAR(20) | 状态（IN_PROGRESS/COMPLETED/TIMEOUT） |
-| completed_questions | INT | 已完成题目数 |
+存储用户参与心理测评的记录。
 
-### 答题记录表 (answer_records)
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 记录ID | 主键，自增 |
+| user_id | BIGINT | 用户ID | 外键，非空 |
+| questionnaire_id | BIGINT | 问卷ID | 外键，非空 |
+| total_score | INT | 测评总分 | 非空 |
+| status | ENUM | 测评状态（IN_PROGRESS/COMPLETED） | 非空 |
+| start_time | DATETIME | 开始时间 | 非空 |
+| complete_time | DATETIME | 完成时间 | 可空 |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| assessment_record_id | BIGINT | 测评记录ID，外键 |
-| question_id | BIGINT | 问题ID，外键 |
-| selected_option_ids | VARCHAR(200) | 选择的选项ID（多选题可能有多个，用逗号分隔） |
-| text_answer | TEXT | 文本答案（适用于文本题） |
-| score | FLOAT | 得分 |
-| answer_time | DATETIME | 答题时间 |
+#### 6. answer_record（答题记录表）
 
-### 咨询预约表 (appointments)
+存储用户对每个问题的回答。
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| student_id | BIGINT | 学生ID，外键 |
-| counselor_id | BIGINT | 咨询师ID，外键 |
-| appointment_time | DATETIME | 预约时间 |
-| end_time | DATETIME | 结束时间 |
-| appointment_type | VARCHAR(50) | 预约类型（线上/线下） |
-| location | VARCHAR(100) | 咨询地点（线下时有效） |
-| topic | VARCHAR(200) | 咨询主题 |
-| description | TEXT | 问题描述 |
-| status | VARCHAR(20) | 状态（PENDING/CONFIRMED/COMPLETED/CANCELLED） |
-| feedback | TEXT | 咨询反馈 |
-| created_at | DATETIME | 创建时间 |
-| updated_at | DATETIME | 更新时间 |
-| cancel_reason | VARCHAR(200) | 取消原因 |
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 记录ID | 主键，自增 |
+| assessment_record_id | BIGINT | 测评记录ID | 外键，非空 |
+| question_id | BIGINT | 问题ID | 外键，非空 |
+| selected_option_ids | VARCHAR(255) | 选中的选项ID（多个ID用逗号分隔） | 非空 |
+| score | INT | 得分 | 非空，默认0 |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
-### 知识库表 (knowledge_base)
+#### 7. appointments（咨询预约表）
 
-| 字段名 | 数据类型 | 说明 |
-|--------|----------|------|
-| id | BIGINT | 主键，自增 |
-| title | VARCHAR(200) | 标题 |
-| content | TEXT | 内容 |
-| category | VARCHAR(50) | 分类 |
-| author | VARCHAR(50) | 作者 |
-| created_at | DATETIME | 创建时间 |
-| updated_at | DATETIME | 更新时间 |
-| status | VARCHAR(20) | 状态（DRAFT/PUBLISHED/ARCHIVED） |
-| tags | VARCHAR(200) | 标签（用逗号分隔） |
-| view_count | INT | 查看次数 |
-| attachment_url | VARCHAR(200) | 附件URL |
+存储学生与咨询师之间的预约信息。
+
+| 字段名 | 类型 | 说明 | 约束 |
+|-------|------|------|------|
+| id | BIGINT | 预约ID | 主键，自增 |
+| student_id | BIGINT | 学生用户ID | 外键，非空 |
+| counselor_id | BIGINT | 咨询师用户ID | 外键，非空 |
+| subject | VARCHAR(255) | 预约主题 | 非空 |
+| description | TEXT | 预约描述 | 可空 |
+| appointment_time | DATETIME | 预约时间 | 非空 |
+| status | ENUM | 预约状态（PENDING/CONFIRMED/COMPLETED/CANCELLED） | 非空，默认PENDING |
+| create_time | DATETIME | 创建时间 | 非空 |
+| update_time | DATETIME | 更新时间 | 非空 |
 
 ### 表关系说明
 
-1. **用户表与角色表**：多对多关系，通过中间表`user_roles`关联
-2. **用户表与学生表/咨询师表**：一对一关系，通过`user_id`关联
-3. **问卷表与问题表**：一对多关系，一个问卷包含多个问题
-4. **问题表与选项表**：一对多关系，一个问题包含多个选项
-5. **学生与测评记录**：一对多关系，一个学生可以有多个测评记录
-6. **测评记录与答题记录**：一对多关系，一个测评记录包含多个答题记录
-7. **学生与咨询预约**：一对多关系，一个学生可以有多个咨询预约
-8. **咨询师与咨询预约**：一对多关系，一个咨询师可以有多个咨询预约
+系统数据库中的表关系如下：
 
-### ER图
+1. **用户与测评记录**：一对多关系
+   - 一个用户可以有多条测评记录
+   - 每条测评记录属于一个用户
+
+2. **问卷与问题**：一对多关系
+   - 一个问卷包含多个问题
+   - 每个问题属于一个问卷
+
+3. **问题与选项**：一对多关系
+   - 一个问题包含多个选项
+   - 每个选项属于一个问题
+
+4. **测评记录与答题记录**：一对多关系
+   - 一条测评记录包含多条答题记录
+   - 每条答题记录属于一条测评记录
+
+5. **用户与预约**：多对多关系
+   - 学生用户可以向多个咨询师预约
+   - 咨询师用户可以接受多个学生的预约
+   - 通过appointments表实现多对多关系
+
+### 数据库ER图
 
 ```
-+-------------+       +-------------+       +-------------+
-|    users    | ----- |  user_roles | ----- |    roles    |
-+-------------+       +-------------+       +-------------+
-      |
-      |
-+-----+-----------+
-|                 |
-|                 |
-v                 v
-+-------------+  +-------------+
-|   students  |  |  counselors |
-+-------------+  +-------------+
-      |                |
-      |                |
-      v                v
-+-------------+       +-------------+
-| assessment_ |       |appointments |
-|   records   | <---- +-------------+
-+-------------+
-      |
-      |
-      v
-+-------------+
-|answer_records|
-+-------------+
-      ^
-      |
-+-----+-----------+
-|                 |
-v                 v
-+-------------+  +-------------+
-| assessment_ |  |  question_  |
-|questionnaires|  |   options   |
-+-------------+  +-------------+
-      |                ^
-      |                |
-      v                |
-+-------------+       |
-| assessment_ | ------+
-|  questions  |
-+-------------+
++-------------+       +------------------------+       +---------------------+
+|   users     |       | assessment_questionnaire |     | assessment_question |
++-------------+       +------------------------+       +---------------------+
+| id          |       | id                     |       | id                  |
+| username    |       | title                  |       | questionnaire_id    |
+| password    |       | description            |       | question_text       |
+| real_name   |       | total_score            |       | question_type       |
+| phone       |       | passing_score          |       | score               |
+| email       |       | status                 |       | sort_order          |
+| role        |       | create_time            |       | create_time         |
+| university  |       | update_time            |       | update_time         |
+| college     |       +------------------------+       +---------------------+
+| major       |                |                                |
+| student_id  |                |                                |
+| enabled     |                |                                |
+| create_time |                |                                |
+| update_time |                |                                |
++-------------+                |                                |
+      |                        |                                |
+      |                        |                                |
+      |                        |                                |
++---------------------+        |                       +-------------------+
+| assessment_record   |        |                       | question_option   |
++---------------------+        |                       +-------------------+
+| id                  |        |                       | id                |
+| user_id             |<-------+                       | question_id       |
+| questionnaire_id    |                                | option_text       |
+| total_score         |                                | score             |
+| status              |                                | sort_order        |
+| start_time          |                                | create_time       |
+| complete_time       |                                | update_time       |
+| create_time         |                                +-------------------+
+| update_time         |                                        |
++---------------------+                                        |
+      |                                                        |
+      |                                                        |
+      |                                                        |
++---------------------+                                        |
+| answer_record       |                                        |
++---------------------+                                        |
+| id                  |                                        |
+| assessment_record_id|                                        |
+| question_id         |<---------------------------------------+
+| selected_option_ids |
+| score               |
+| create_time         |
+| update_time         |
++---------------------+
+
++-------------+       +---------------------+       +-------------+
+|   users     |       |    appointments     |       |   users     |
+| (STUDENT)   |       +---------------------+       | (COUNSELOR) |
++-------------+       | id                  |       +-------------+
+| id          |<------| student_id          |       | id          |
+| ...         |       | counselor_id        |------>| ...         |
++-------------+       | subject             |       +-------------+
+                      | description         |
+                      | appointment_time    |
+                      | status              |
+                      | create_time         |
+                      | update_time         |
+                      +---------------------+
 ```
 
-## 数据库迁移
+### 数据库迁移
 
 项目使用Flyway进行数据库版本控制，迁移脚本位于 `backend/src/main/resources/db/migration/` 目录下，按照以下命名规则：
 
-```
-V{version}__{description}.sql
-```
+- `V1__Create_Users_Table.sql`: 创建用户表
+- `V2__Add_User_Enabled_Field.sql`: 添加用户启用字段
+- `V3__Create_Assessment_Tables.sql`: 创建测评相关表
+- `V4__Add_Super_Admin.sql`: 添加超级管理员
+- `V5__Create_Appointments_Table.sql`: 创建预约表
 
-例如：`V1__create_users_table.sql`
+这种版本化的数据库迁移方式确保了数据库结构的演进可追踪，并且在不同环境中保持一致性。
 
 ## 启动指南
 
 ### 环境准备
 
-1. 安装JDK 21
-2. 安装Node.js (v16+)和npm
-3. 安装MySQL 8
-4. 创建数据库 `mental_health_counseling`
+1. **安装JDK 21**
+   - 下载并安装JDK 21
+   - 配置JAVA_HOME环境变量
 
-### 使用一键启动脚本
+2. **安装Node.js和npm**
+   - 下载并安装Node.js v18+
+   - 确保npm版本在10.9.0以上
 
-1. 双击项目根目录下的 `启动项目.bat` 文件
-2. 该脚本会自动启动前端和后端服务
+3. **安装MySQL 8**
+   - 下载并安装MySQL 8
+   - 创建数据库：`CREATE DATABASE mental_health_counseling;`
+   - 创建用户并授权（或使用root用户）
 
-### 手动启动
+### 后端启动
 
-#### 后端启动
+1. **配置数据库连接**
+   - 修改`backend/src/main/resources/application.yml`中的数据库连接信息
 
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-#### 前端启动
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### 访问地址
-
-- 前端：http://localhost:5173
-- 后端API：http://localhost:8080
-- API文档：http://localhost:8080/swagger-ui.html
-
-## 部署指南
-
-### 生产环境部署
-
-#### 后端部署
-
-1. 编译打包：
+2. **编译并启动后端服务**
    ```bash
    cd backend
-   mvn clean package -Pprod
+   mvn clean install
+   mvn spring-boot:run
    ```
 
-2. 将生成的JAR文件部署到服务器：
-   ```bash
-   java -jar counseling-system.jar --spring.profiles.active=prod
-   ```
+3. **验证后端服务**
+   - 访问 http://localhost:8080/api/health 确认服务正常运行
 
-#### 前端部署
+### 前端启动
 
-1. 构建前端静态文件：
+1. **安装依赖**
    ```bash
    cd frontend
-   npm run build
+   npm install
    ```
 
-2. 将生成的`dist`目录下的文件部署到Web服务器(如Nginx)
+2. **配置API地址**
+   - 确认`.env`文件中的API地址配置正确
 
-### Docker部署
+3. **启动开发服务器**
+   ```bash
+   npm run dev
+   ```
 
-项目提供了Docker支持，可以使用Docker Compose进行一键部署：
+4. **访问应用**
+   - 打开浏览器访问 http://localhost:5173
 
-```bash
-docker-compose up -d
-```
+## 默认账号
 
-## 开发指南
+系统初始化后会创建以下默认账号：
 
-### 前端开发
+- **管理员账号**
+  - 用户名：admin
+  - 密码：admin123
+  - 角色：ADMIN
 
-1. 添加新页面：
-   - 在`src/views/`对应角色目录下创建Vue组件
-   - 在`src/router/index.ts`中添加路由配置
-   - 确保设置正确的权限控制 `meta: { requiresAuth: true, role: '角色名' }`
+- **测试咨询师账号**
+  - 用户名：counselor
+  - 密码：counselor123
+  - 角色：COUNSELOR
 
-2. API调用：
-   - 在`src/api/`下创建或修改对应模块的API调用方法
-   - 使用`request`工具进行HTTP请求
+- **测试学生账号**
+  - 用户名：student
+  - 密码：student123
+  - 角色：STUDENT
 
-### 后端开发
-
-1. 添加新功能：
-   - 创建实体类(Entity)
-   - 添加数据访问层(Repository)
-   - 实现服务层(Service)
-   - 创建控制器(Controller)
-   - 添加必要的DTO类
-
-2. 权限控制：
-   - 使用`@PreAuthorize`注解控制方法访问权限
-   - 例如：`@PreAuthorize("hasRole('COUNSELOR')")`
-
-## 系统亮点
-
-1. **多角色权限控制**：基于Spring Security和JWT的精细化权限控制，确保不同角色用户只能访问自己权限范围内的功能。
-
-2. **专业心理测评**：集成多种专业心理测评量表，如抑郁症筛查量表(PHQ-9)、广泛性焦虑量表(GAD-7)等，提供科学的心理健康评估。
-
-3. **灵活的问卷设计**：支持多种题型（单选、多选、量表、文本）的问卷设计，满足不同心理测评需求。
-
-4. **数据可视化**：直观展示测评结果和统计数据，帮助用户更好地理解心理健康状况。
-
-5. **高度隐私保护**：采用数据加密、访问控制等多重安全措施，保护用户敏感的心理健康数据。
-
-6. **响应式设计**：前端采用响应式设计，适配不同设备，提供良好的用户体验。
-
-7. **完整的日志审计**：记录系统关键操作，便于问题追踪和安全审计。
-
-## 后续规划
-
-1. **智能推荐系统**：基于学生的心理测评结果，智能推荐相关的心理健康资源和服务。
-
-2. **在线交流功能**：增加学生与咨询师的实时在线交流功能，提高咨询效率。
-
-3. **移动端应用**：开发移动端应用，方便学生随时随地获取心理健康服务。
-
-4. **AI辅助分析**：引入人工智能技术，辅助分析学生的心理健康状况，提供更精准的心理健康建议。
-
-5. **知识库建设**：建立心理健康知识库，为学生提供自助学习和自我调节的资源。
+*注意：首次使用时请修改默认密码以确保系统安全。*
