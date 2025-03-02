@@ -379,13 +379,218 @@ backend/
 
 系统使用MySQL 8作为数据库，主要包含以下核心表：
 
-- `users`: 用户信息表
-- `assessment_questionnaires`: 心理测评问卷表
-- `assessment_questions`: 问卷题目表
-- `question_options`: 题目选项表
-- `assessment_records`: 测评记录表
-- `answer_records`: 答题记录表
-- `appointments`: 咨询预约表
+### 用户表 (users)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| username | VARCHAR(50) | 用户名，唯一 |
+| password | VARCHAR(100) | 密码（加密存储） |
+| email | VARCHAR(100) | 邮箱 |
+| phone | VARCHAR(20) | 手机号 |
+| real_name | VARCHAR(50) | 真实姓名 |
+| role | VARCHAR(20) | 角色（STUDENT/COUNSELOR/ADMIN） |
+| created_at | DATETIME | 创建时间 |
+| updated_at | DATETIME | 更新时间 |
+| status | TINYINT | 状态（1-启用/0-禁用） |
+| last_login_time | DATETIME | 最后登录时间 |
+
+### 角色表 (roles)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| name | VARCHAR(50) | 角色名称，唯一 |
+| description | VARCHAR(200) | 角色描述 |
+
+### 学生信息表 (students)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| user_id | BIGINT | 关联用户ID，外键 |
+| student_id | VARCHAR(20) | 学号 |
+| college | VARCHAR(100) | 学院 |
+| major | VARCHAR(100) | 专业 |
+| grade | VARCHAR(20) | 年级 |
+| class_name | VARCHAR(50) | 班级 |
+| gender | VARCHAR(10) | 性别 |
+| birth_date | DATE | 出生日期 |
+| address | VARCHAR(200) | 地址 |
+| emergency_contact | VARCHAR(50) | 紧急联系人 |
+| emergency_phone | VARCHAR(20) | 紧急联系电话 |
+
+### 咨询师信息表 (counselors)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| user_id | BIGINT | 关联用户ID，外键 |
+| title | VARCHAR(50) | 职称 |
+| expertise | VARCHAR(200) | 专业领域 |
+| introduction | TEXT | 个人简介 |
+| qualification | VARCHAR(100) | 资质证书 |
+| work_years | INT | 工作年限 |
+| available_time | TEXT | 可预约时间（JSON格式） |
+| max_appointments_per_day | INT | 每日最大预约数 |
+
+### 心理测评问卷表 (assessment_questionnaires)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| title | VARCHAR(100) | 问卷标题 |
+| description | TEXT | 问卷描述 |
+| instructions | TEXT | 填写说明 |
+| category | VARCHAR(50) | 问卷类别 |
+| total_score | INT | 总分值 |
+| created_by | BIGINT | 创建者ID |
+| created_at | DATETIME | 创建时间 |
+| updated_at | DATETIME | 更新时间 |
+| status | VARCHAR(20) | 状态（DRAFT/PUBLISHED/ARCHIVED） |
+| time_limit_minutes | INT | 答题时限（分钟） |
+
+### 问卷题目表 (assessment_questions)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| questionnaire_id | BIGINT | 所属问卷ID，外键 |
+| question_text | TEXT | 问题文本 |
+| question_type | VARCHAR(20) | 问题类型（SINGLE_CHOICE/MULTIPLE_CHOICE/SCALE/TEXT） |
+| required | BOOLEAN | 是否必答 |
+| order_num | INT | 顺序号 |
+| score_weight | FLOAT | 分数权重 |
+
+### 题目选项表 (question_options)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| question_id | BIGINT | 所属问题ID，外键 |
+| option_text | VARCHAR(200) | 选项文本 |
+| option_value | INT | 选项分值 |
+| order_num | INT | 顺序号 |
+| is_correct_answer | BOOLEAN | 是否为正确答案（适用于有标准答案的题目） |
+
+### 测评记录表 (assessment_records)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| student_id | BIGINT | 学生ID，外键 |
+| questionnaire_id | BIGINT | 问卷ID，外键 |
+| start_time | DATETIME | 开始时间 |
+| end_time | DATETIME | 结束时间 |
+| total_score | FLOAT | 总得分 |
+| result_level | VARCHAR(20) | 结果等级（如：正常/轻度/中度/重度） |
+| result_description | TEXT | 结果描述 |
+| status | VARCHAR(20) | 状态（IN_PROGRESS/COMPLETED/TIMEOUT） |
+| completed_questions | INT | 已完成题目数 |
+
+### 答题记录表 (answer_records)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| assessment_record_id | BIGINT | 测评记录ID，外键 |
+| question_id | BIGINT | 问题ID，外键 |
+| selected_option_ids | VARCHAR(200) | 选择的选项ID（多选题可能有多个，用逗号分隔） |
+| text_answer | TEXT | 文本答案（适用于文本题） |
+| score | FLOAT | 得分 |
+| answer_time | DATETIME | 答题时间 |
+
+### 咨询预约表 (appointments)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| student_id | BIGINT | 学生ID，外键 |
+| counselor_id | BIGINT | 咨询师ID，外键 |
+| appointment_time | DATETIME | 预约时间 |
+| end_time | DATETIME | 结束时间 |
+| appointment_type | VARCHAR(50) | 预约类型（线上/线下） |
+| location | VARCHAR(100) | 咨询地点（线下时有效） |
+| topic | VARCHAR(200) | 咨询主题 |
+| description | TEXT | 问题描述 |
+| status | VARCHAR(20) | 状态（PENDING/CONFIRMED/COMPLETED/CANCELLED） |
+| feedback | TEXT | 咨询反馈 |
+| created_at | DATETIME | 创建时间 |
+| updated_at | DATETIME | 更新时间 |
+| cancel_reason | VARCHAR(200) | 取消原因 |
+
+### 知识库表 (knowledge_base)
+
+| 字段名 | 数据类型 | 说明 |
+|--------|----------|------|
+| id | BIGINT | 主键，自增 |
+| title | VARCHAR(200) | 标题 |
+| content | TEXT | 内容 |
+| category | VARCHAR(50) | 分类 |
+| author | VARCHAR(50) | 作者 |
+| created_at | DATETIME | 创建时间 |
+| updated_at | DATETIME | 更新时间 |
+| status | VARCHAR(20) | 状态（DRAFT/PUBLISHED/ARCHIVED） |
+| tags | VARCHAR(200) | 标签（用逗号分隔） |
+| view_count | INT | 查看次数 |
+| attachment_url | VARCHAR(200) | 附件URL |
+
+### 表关系说明
+
+1. **用户表与角色表**：多对多关系，通过中间表`user_roles`关联
+2. **用户表与学生表/咨询师表**：一对一关系，通过`user_id`关联
+3. **问卷表与问题表**：一对多关系，一个问卷包含多个问题
+4. **问题表与选项表**：一对多关系，一个问题包含多个选项
+5. **学生与测评记录**：一对多关系，一个学生可以有多个测评记录
+6. **测评记录与答题记录**：一对多关系，一个测评记录包含多个答题记录
+7. **学生与咨询预约**：一对多关系，一个学生可以有多个咨询预约
+8. **咨询师与咨询预约**：一对多关系，一个咨询师可以有多个咨询预约
+
+### ER图
+
+```
++-------------+       +-------------+       +-------------+
+|    users    | ----- |  user_roles | ----- |    roles    |
++-------------+       +-------------+       +-------------+
+      |
+      |
++-----+-----------+
+|                 |
+|                 |
+v                 v
++-------------+  +-------------+
+|   students  |  |  counselors |
++-------------+  +-------------+
+      |                |
+      |                |
+      v                v
++-------------+       +-------------+
+| assessment_ |       |appointments |
+|   records   | <---- +-------------+
++-------------+
+      |
+      |
+      v
++-------------+
+|answer_records|
++-------------+
+      ^
+      |
++-----+-----------+
+|                 |
+v                 v
++-------------+  +-------------+
+| assessment_ |  |  question_  |
+|questionnaires|  |   options   |
++-------------+  +-------------+
+      |                ^
+      |                |
+      v                |
++-------------+       |
+| assessment_ | ------+
+|  questions  |
++-------------+
+```
 
 ## 数据库迁移
 
